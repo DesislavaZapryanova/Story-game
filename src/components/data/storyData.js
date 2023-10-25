@@ -40,7 +40,7 @@ export const textNodes = [
   {
     id: '2b',
     h1: 'The Bustling Port',
-    img: 'images/bustling-port.jpg',
+    img: 'images/port.jpg',
     text: "Opting for the bustling port, you embrace the vibrant energy of traders and adventurers. You hear rumors of a wise old sailor who knows the island's secrets. Do you:",
     options: [
       {
@@ -152,7 +152,7 @@ export const textNodes = [
 
   {
     id: '4b',
-    h1: 'Oops',
+    h1: 'Oops..',
     img: 'images/quicksand.jpg',
     text: "The path leads you to quicksand, and you get stuck. With no help in sight, you become another tale lost to the island's mysteries.",
     options: [
@@ -266,7 +266,7 @@ export const textNodes = [
 
   {
     id: '4h',
-    img: 'images/hidden-passage.jpg',
+    img: 'images/hidden-passage-1.jpg',
     h1: 'Decline and Explore on Your Own',
     text: 'Relying on your instincts, you find a hidden passage.',
     options: [
@@ -437,7 +437,7 @@ export const textNodes = [
 
   {
     id: '5i',
-    img: 'images/hidden-passage.jpg',
+    img: 'images/hidden-passage-2.jpg',
     h1: 'Enter the Passage',
     text: 'Relying on your instincts, you find a hidden passage.',
     options: [
