@@ -4,7 +4,7 @@ export const textNodes = [
   {
     id: 1,
     h1: 'The Arrival',
-    img: '../../public/images/arrival-1.jpg',
+    img: 'arrival-1.jpg',
     text: 'As your boat approaches Ember Isle, you see two possible landing spots...',
     options: [
       {
