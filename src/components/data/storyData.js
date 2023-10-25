@@ -4,7 +4,7 @@ export const textNodes = [
   {
     id: 1,
     h1: 'The Arrival',
-    img: 'arrival-1.jpg',
+    img: 'images/arrival.jpg', // Updated image path
     text: 'As your boat approaches Ember Isle, you see two possible landing spots...',
     options: [
       {
@@ -22,7 +22,7 @@ export const textNodes = [
   {
     id: '2a',
     h1: 'The Secluded Cove',
-    img: 'cove.jpg',
+    img: 'images/secluded-cove.jpg',
     text: 'You choose the secluded cove, finding tranquility in its peaceful surroundings. Exploring the island, you come across a fork in the path. One leads through a dense jungle, and the other winds along a cliffside. Which way will you go?',
     options: [
       {
@@ -40,7 +40,7 @@ export const textNodes = [
   {
     id: '2b',
     h1: 'The Bustling Port',
-    img: 'arrival.jpg',
+    img: 'images/bustling-port.jpg',
     text: "Opting for the bustling port, you embrace the vibrant energy of traders and adventurers. You hear rumors of a wise old sailor who knows the island's secrets. Do you:",
     options: [
       {
@@ -58,7 +58,7 @@ export const textNodes = [
   {
     id: '3a',
     h1: 'The Jungle',
-    img: 'jungle.jpg',
+    img: 'images/jungle.jpg',
     text: 'The jungle is dense and disorienting. You hear mysterious sounds around you. Suddenly, you encounter a fork in the path with two ancient statues. One points left, and the other points right. Which way do you choose?',
     options: [
       {
@@ -77,6 +77,7 @@ export const textNodes = [
   {
     id: '3b',
     h1: 'The Cliffside Path',
+    img: 'images/cliffside-path.jpg',
     text: 'Deciding against the rickety bridge, you cautiously make your way downhill. The cliffside path offers breathtaking views of the ocean. As you proceed, you encounter a rickety bridge. Do you:',
     options: [
       {
@@ -95,6 +96,7 @@ export const textNodes = [
   {
     id: '3c',
     h1: 'The Wise Sailor',
+    img: 'images/wise-man.jpg',
     text: "The wise sailor shares a piece of advice: 'Beware the guardian of the caves.' You can either:",
     options: [
       {
@@ -113,6 +115,7 @@ export const textNodes = [
   {
     id: '3d',
     h1: 'Explore the Market',
+    img: 'images/explore-market.jpg',
     text: 'Intrigued by the treasure map seller, you decide to purchase the detailed map. In the market, you find a treasure map seller. He claims to have a detailed map of the island. Do you:',
     options: [
       {
@@ -130,7 +133,8 @@ export const textNodes = [
 
   {
     id: '4a',
-    h1: 'Left Path',
+    h1: 'Hidden Temple ',
+    img: 'images/hidden-temple.jpg',
     text: "You stumble upon a hidden temple. Inside, there are traps and puzzles. Solving them, you reach the treasure room. Congratulations! You've Found the Lost Treasure of Ember Isle!",
     options: [
       {
@@ -148,7 +152,8 @@ export const textNodes = [
 
   {
     id: '4b',
-    h1: 'Right Path',
+    h1: 'Oops',
+    img: 'images/quicksand.jpg',
     text: "The path leads you to quicksand, and you get stuck. With no help in sight, you become another tale lost to the island's mysteries.",
     options: [
       {
@@ -167,6 +172,7 @@ export const textNodes = [
   {
     id: '4c',
     h1: 'Cross the Bridge',
+    img: 'images/cavern.jpg',
     text: "The bridge collapses under your weight, and you fall into a cavern. It's dark, but you hear distant growls.",
     options: [
       {
@@ -185,6 +191,7 @@ export const textNodes = [
   {
     id: '4d',
     h1: 'Go Downhill',
+    img: 'images/temple-entrance.jpg',
     text: 'You discover an ancient temple entrance. As you approach, you hear chanting from within.',
     options: [
       {
@@ -203,6 +210,7 @@ export const textNodes = [
   {
     id: '4e',
     h1: 'Enter the Caves',
+    img: 'images/cave.jpg',
     text: 'The caves lead you to a massive chamber guarded by a mythical creature. You can:',
     options: [
       {
@@ -221,6 +229,7 @@ export const textNodes = [
   {
     id: '4f',
     h1: 'Thank the Sailor and Set Sail',
+    img: 'images/set-sail.jpg',
     text: 'Expressing gratitude to the wise sailor, you set sail, avoiding the potential dangers of the island.',
     options: [
       {
@@ -239,6 +248,7 @@ export const textNodes = [
   {
     id: '4g',
     h1: 'Buy the Map',
+    img: 'images/map.jpg',
     text: 'Following the map through treacherous terrain, you encounter a hidden cave.',
     options: [
       {
@@ -256,6 +266,7 @@ export const textNodes = [
 
   {
     id: '4h',
+    img: 'images/hidden-passage.jpg',
     h1: 'Decline and Explore on Your Own',
     text: 'Relying on your instincts, you find a hidden passage.',
     options: [
@@ -274,6 +285,7 @@ export const textNodes = [
 
   {
     id: '5a',
+    img: 'images/light-a-torch.jpg',
     h1: 'Light a Torch',
     text: 'The light reveals a friendly creature that guides you to the treasure.',
     options: [
@@ -292,6 +304,7 @@ export const textNodes = [
 
   {
     id: '5b',
+    img: 'images/explore-dark.jpg',
     h1: 'Explore in Darkness',
     text: 'Choosing to explore in darkness, you traverse cautiously, guided only by the echoes of mysterious growls.',
     options: [
@@ -310,6 +323,7 @@ export const textNodes = [
 
   {
     id: '5c',
+    img: 'images/enter-temple.jpg',
     h1: 'Enter the Temple',
     text: "Entering the ancient temple, you're greeted by eerie chants echoing through its mysterious chambers.",
     options: [
@@ -329,6 +343,7 @@ export const textNodes = [
   {
     id: '5d',
     h1: 'Bypass the Temple',
+    img: 'images/finding-treasure.jpg',
     text: 'You find the treasure hidden in a secret alcove.',
     options: [
       {
@@ -346,6 +361,7 @@ export const textNodes = [
 
   {
     id: '5e',
+    img: 'images/face-the-guardian.jpg',
     h1: 'Face the Guardian',
     text: 'A fierce battle ensues, and you emerge victorious.',
     options: [
@@ -364,6 +380,7 @@ export const textNodes = [
 
   {
     id: '5f',
+    img: 'images/exit-cave.jpg',
     h1: 'Retreat from the Caves',
     text: 'You escape the caves but never find the treasure.',
     options: [
@@ -382,6 +399,7 @@ export const textNodes = [
 
   {
     id: '5g',
+    img: 'images/exit-cave.jpg',
     h1: 'Enter the Cave',
     text: 'The cave leads to the treasure room.',
     options: [
@@ -400,6 +418,7 @@ export const textNodes = [
 
   {
     id: '5h',
+    img: 'images/temple-entrance.jpg',
     h1: 'Continue Without Entering',
     text: 'You follow the map to a dead end.',
     options: [
@@ -418,6 +437,7 @@ export const textNodes = [
 
   {
     id: '5i',
+    img: 'images/hidden-passage.jpg',
     h1: 'Enter the Passage',
     text: 'Relying on your instincts, you find a hidden passage.',
     options: [
@@ -436,6 +456,7 @@ export const textNodes = [
 
   {
     id: '5j',
+    img: 'images/endless.jpg',
     h1: 'Continue Without Entering',
     text: 'You get lost, wandering the island endlessly.',
     options: [
@@ -453,6 +474,7 @@ export const textNodes = [
   },
   {
     id: 'ending1',
+    img: 'images/ending1.jpg',
     h1: 'Triumphant Explorer',
     text: "Congratulations! You have successfully navigated the challenges of Ember Isle and claimed the Lost Treasure. Your name will be forever etched in the island's history as the triumphant adventurer who outwitted its mysteries.",
     options: [
@@ -465,6 +487,7 @@ export const textNodes = [
 
   {
     id: 'ending2',
+    img: 'images/ending2.jpg',
     h1: 'Legacy of the Unfound Treasure',
     text: 'Your journey on Ember Isle has come to an end, and although the Lost Treasure remains elusive, the tales of your bravery and choices will be told for generations. Perhaps another daring adventurer will continue the quest.',
     options: [

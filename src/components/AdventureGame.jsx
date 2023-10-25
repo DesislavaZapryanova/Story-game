@@ -1,25 +1,20 @@
 // AdventureGame.jsx
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './AdventureGame.css';
 import { textNodes } from './data/storyData';
 
 const AdventureGame = () => {
   const [state, setState] = useState({});
   const [currentTextNode, setCurrentTextNode] = useState(1);
-  const [backgroundImage, setBackgroundImage] = useState(null);
+
+  useEffect(() => {
+    showTextNode(currentTextNode);
+  }, [currentTextNode]);
 
   const startGame = () => {
     setState({});
-    setBackgroundImage(null);
-    showTextNode(1);
-  };
-
-  const updateBackgroundImage = (textNodeIndex, optionIndex) => {
-    const textNode = textNodes.find((node) => node.id === textNodeIndex);
-    const option = textNode?.options[optionIndex];
-    const imageSrc = option?.img ? `${option.img}` : null;
-    setBackgroundImage(imageSrc);
+    setCurrentTextNode(1);
   };
 
   const showTextNode = (textNodeIndex) => {
@@ -29,8 +24,6 @@ const AdventureGame = () => {
     if (textNode?.setState) {
       setState((prevState) => ({ ...prevState, ...textNode.setState }));
     }
-
-    updateBackgroundImage(textNodeIndex, 0); // Default to the first option's image
   };
 
   const showOption = (option) => {
@@ -49,28 +42,36 @@ const AdventureGame = () => {
     }
 
     showTextNode(nextTextNodeId);
-    updateBackgroundImage(nextTextNodeId, optionIndex);
   };
 
   return (
     <div className="container">
-      <h1>{textNodes.find((node) => node.id === currentTextNode)?.h1}</h1>
-      <div id="text">{textNodes.find((node) => node.id === currentTextNode)?.text}</div>
-      <div
-        id="background-image"
-        style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}></div>
-      <div id="option-buttons">
-        {textNodes
-          .find((node) => node.id === currentTextNode)
-          ?.options.map((option, index) => (
-            <button
-              key={index}
-              className="btn"
-              onClick={() => selectOption(option, index)}
-              disabled={!showOption(option)}>
-              {option.text}
-            </button>
-          ))}
+      {textNodes.find((node) => node.id === currentTextNode)?.img && (
+        <img
+          src={`/${textNodes.find((node) => node.id === currentTextNode).img}`}
+          alt={textNodes.find((node) => node.id === currentTextNode)?.h1}
+          className="adventure-image"
+        />
+      )}
+      <div className="container-game-frame">
+        <div id="text">
+          <h1>{textNodes.find((node) => node.id === currentTextNode)?.h1}</h1>
+          {textNodes.find((node) => node.id === currentTextNode)?.text}
+        </div>
+
+        <div id="option-buttons">
+          {textNodes
+            .find((node) => node.id === currentTextNode)
+            ?.options.map((option, index) => (
+              <button
+                key={index}
+                className="btn"
+                onClick={() => selectOption(option, index)}
+                disabled={!showOption(option)}>
+                {option.text}
+              </button>
+            ))}
+        </div>
       </div>
     </div>
   );
